@@ -6,7 +6,7 @@
   - ### A single-page website is a type of web design where all the content is displayed on a single, scrollable page. Unlike multi-page websites, which have separate pages for different sections (like "About," "Services," or "Contact"), single-page sites organize all these sections into one continuous layout.
 - ### Build User Interface from Components.
 ---
-### Virtual DOM / Real DOM
+### Virtual DOM vs Real DOM
 #### [Read About Virtual DOM/ Real DOM](./data/pdfs/RealDOMVirtualDOM.pdf)
 ---
 
