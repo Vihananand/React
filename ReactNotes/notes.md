@@ -85,6 +85,10 @@ npm install
 npm run dev
 ```
 ---
+### Folder Structure in React
+![Local Image](./data/image/ss1.png)
+[Read More about folder structure in react](./data/pdfs/FolderStructureInReact.pdf)
+---
 ### 1. In React there are ***two*** types of components
 
 - ### *Class based components*
