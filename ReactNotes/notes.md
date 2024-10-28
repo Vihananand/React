@@ -12,16 +12,64 @@
 ### Arrow Function vs Normal Function
 #### [Read About Normal Function/ Arrow Function](./data/pdfs/normalFuncArrowFunc.pdf)
 ---
+## Note : You need an important extension in VSCode to work easily in React an d its extension code is ***"dsznajder.es7-react-js-snippets".***
+
 ### React works on the basis of modules and we can use predefined modules in javascript or we can make our own. If we make our own module we need to export the module so that we can import it in another js file and use it. So there are two ways to export a function:
 
-[Calculator.js](../MakingAModule/calculator.js)
+- ### First is that we use default export which make the work quite lenghty because for each function you add in the file will have to exported in seperate line and when you import it in another file you need to import all the functions each in seperate line, so it makes the code lengthy:
+
+### [calculator.js](../MakingAModule/calculator.js)
 ```js
 let sumData = (a,b) =>{
     return a + b;
 }
 
-export default sumData; //The export here is default export and in order to import this function in another file
+let subData = (a,b) =>{
+    return a - b;
+}
+
+export default sumData; //The export here is default export and in order to import this function in another file we need the code below
+export default subData;
 ```
+### [index.js](../MakingAModule/index.js)
+```js
+import sumData from "./calculator.js"; //This will import the sumData function from calculator.js file in index.js file
+import subData from "./calculator.js"; 
+
+console.log(sumData(10, 20));
+console.log(subData(10, 20));
+```
+- ### Second we use normal export in which multiple function can be called in single line :
+
+```js
+let sumData = (a,b) =>{
+    return a + b;
+}
+
+let sumData = (a,b) =>{
+    return a + b;
+}
+
+export let name = "Vihan Anand";
+
+export {sumData, subData}; 
+```
+```js
+import {sumData, subData, name} from "./calculator.js"; //This will import the sumData function from calculator.js file in index.js file
+
+console.log(sumData(10, 20));
+console.log(subData(10, 20));
+console.log(name);
+```
+- ### We can also create alias(petname) of a function if the function name is very large and we dont want to use the name of function again and again and we can use petname to call the function:
+
+```js
+import {sumData as sum, subData} from "./calculator.js"; 
+
+console.log(sum(10, 20));
+console.log(subData(10, 20));
+```
+- ### Node has two things npm(node package manager) and npx(node package executor)
 ---
 ### 1. In React there are ***two*** types of components
 
