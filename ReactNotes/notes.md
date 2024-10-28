@@ -86,7 +86,7 @@ npm run dev
 ```
 ---
 ### Folder Structure in React
-![Local Image](./data/image/ss1.png)
+![Local Image](./data/image/ss1.png) <br><br><br>
 [Read More about folder structure in react](./data/pdfs/FolderStructureInReact.pdf)
 ---
 ### 1. In React there are ***two*** types of components
