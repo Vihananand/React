@@ -9,7 +9,20 @@
 ### Virtual DOM vs Real DOM
 #### [Read About Virtual DOM/ Real DOM](./data/pdfs/RealDOMVirtualDOM.pdf)
 ---
+### Arrow Function vs Normal Function
+#### [Read About Normal Function/ Arrow Function](./data/pdfs/normalFuncArrowFunc.pdf)
+---
+### React works on the basis of modules and we can use predefined modules in javascript or we can make our own. If we make our own module we need to export the module so that we can import it in another js file and use it. So there are two ways to export a function:
 
+[Calculator.js](../MakingAModule/calculator.js)
+```js
+let sumData = (a,b) =>{
+    return a + b;
+}
+
+export default sumData; //The export here is default export and in order to import this function in another file
+```
+---
 ### 1. In React there are ***two*** types of components
 
 - ### *Class based components*
