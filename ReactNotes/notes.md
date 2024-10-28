@@ -69,7 +69,7 @@ import {sumData as sum, subData} from "./calculator.js";
 console.log(sum(10, 20));
 console.log(subData(10, 20));
 ```
-- ### Node has two things npm(node package manager) and npx(node package executor)
+- ### Node has two things npm(node package manager) and npx(node package executor).
 ---
 ### 1. In React there are ***two*** types of components
 
