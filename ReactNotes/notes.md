@@ -71,6 +71,24 @@ console.log(subData(10, 20));
 ```
 - ### Node has two things npm(node package manager) and npx(node package executor).
 ---
+### Creating react app(Using Vite)
+```bash
+npm create vite@latest
+```
+```bash
+cd {project name}
+```
+```bash
+npm install
+```
+```bash
+npm run dev
+```
+---
+### Folder Structure in React
+![Local Image](./data/image/ss1.png)
+[Read More about folder structure in react](./data/pdfs/FolderStructureInReact.pdf)
+---
 ### 1. In React there are ***two*** types of components
 
 - ### *Class based components*
